@@ -1,8 +1,7 @@
-// TODO: Add your import statements here.
 import {getRoles, getCompanies} from './modules/salaryData.js';
 import {getAverageSalaryByRole, getAverageSalaryByCompany, getSalaryAtCompany, getIndustryAverageSalary} from './modules/workAroundModule.js';
 import {formatNumber} from './modules/utilities.js';
-// TODO: Get the companies and roles using the salaryData module.
+
 const companies = getCompanies();
 const roles = getRoles();
 
@@ -54,7 +53,7 @@ function updateResults(){
   // If either the company or role is unselected, return.
   if (!company || !role) { return; }
 
-  // TODO: Use the workAroundModule functions to calculate the needed data.
+  //Use the workAroundModule functions to calculate the needed data.
    const averageSalaryByRole = formatNumber(getAverageSalaryByRole(role));
   const averageSalaryByCompany = formatNumber(getAverageSalaryByCompany(company));
   const salary = formatNumber(getSalaryAtCompany(role, company));

@@ -1,4 +1,3 @@
-// Add your imports here.
 import {getDataByRole, getDataByCompany} from './salaryData.js';
 import salaryData from './salaryData.js';
 
